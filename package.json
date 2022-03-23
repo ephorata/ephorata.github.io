@@ -1,23 +1,28 @@
 {
   "name": "frontend",
+  "homepage": "https://ephorata.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
-    "@react-three/drei": "^7.20.5",
+    "@react-three/drei": "3.0.0",
     "@react-three/fiber": "^7.0.19",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "drei": "2.2.17",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "react-three-fiber": "5.3.14",
     "serve": "^13.0.2",
-    "three": "^0.134.0",
+    "three": "0.124.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
